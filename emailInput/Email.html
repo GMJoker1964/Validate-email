@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isValidEmail(str) {
+        let regexp = /^[A-Za-z0-9]+@[A-Za-z0-9]+\.[A-Za-z0-9]+$/;
+        let result = regexp.test(str);
+        if(result){
+            return true;
+        }
+        return false;
+        
+    }
+    var email = prompt("Email: ");
+    var result = isValidEmail(email);
+    document.write(result);
+</script>
+</body>
+</html>
